@@ -1,4 +1,4 @@
-package com.example.height_calculator
+package it.docdev.height_calculator
 
 import io.flutter.embedding.android.FlutterActivity
 
