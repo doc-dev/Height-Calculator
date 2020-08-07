@@ -15,7 +15,7 @@ class HeightCalculator extends StatelessWidget {
     return MaterialApp(
       title: 'Height Calculator',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Height Calculator'),
@@ -34,6 +34,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Stopwatch stopwatch = new Stopwatch();
   bool stopped = false;
+
   TextStyle titles = TextStyle(fontSize: 24.0, fontFamily: "Open Sans");
 
   TextStyle data = TextStyle(fontSize: 20.0, fontFamily: "Open Sans");
@@ -127,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 )),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <Widget>[
               buildFloatingButton(stopwatch.isRunning ? "Stop " : "Start ", startButtonPressed,
-                  Icon(Icons.timer), "First", Colors.blue),
+                  Icon(Icons.timer), "First", Colors.indigo),
               buildFloatingButton(
                   "Reset", resetButtonPressed, Icon(Icons.timer_off), "Second", Colors.orange)
             ]),
