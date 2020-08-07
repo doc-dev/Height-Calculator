@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class InfoActivity extends StatelessWidget {
-  TextStyle titles = TextStyle(fontSize: 28.0, fontFamily: "Open Sans");
+  final TextStyle titles = TextStyle(fontSize: 28.0, fontFamily: "Open Sans");
 
-  TextStyle data = TextStyle(fontSize: 18.0, fontFamily: "Open Sans");
+  final TextStyle data = TextStyle(fontSize: 18.0, fontFamily: "Open Sans");
 
   @override
   Widget build(BuildContext context) {
